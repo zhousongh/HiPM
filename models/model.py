@@ -84,6 +84,9 @@ class AdaptivePrompter(nn.Module):
 
 
 class AttnLocalAugmentation(nn.Module):
+    '''
+    LocalAugmentation module from HimGNN(https://academic.oup.com/bib/article/24/5/bbad305/7245716?login=false)
+    '''
     def __init__(self, args_dict):
         super(AttnLocalAugmentation, self).__init__()
         self.linear_layers = nn.ModuleList(
