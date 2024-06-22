@@ -58,5 +58,5 @@ python train_evaluate.py --dataset <datasetname> --device cuda:0 --epoch 150
 | ----- | ----------------- | --------------- |
 | HiPM  | $0.0117\pm0.0001$ | $5.238\pm0.199$ |
 
-We used a 10-folds validation with scaffold splitting, and reported the mean and standard deviation of AUC or MAE values. For methodology and random-split results, please refer to the paper for more details. 
+We randomly selected three seeds for each experiment with scaffold splitting, then reported the mean and standard deviation of AUC or MAE values. For methodology, please refer to the paper for more details. 
 
