@@ -21,11 +21,9 @@ from scipy.spatial import distance
 from matplotlib import pyplot as plt
 import seaborn as sns
 
-
 warnings.filterwarnings("ignore")
 
 ROOT = f'/root'
-
 
 def configure(args):
     configs = {}
@@ -88,7 +86,6 @@ def train_evaluate(args_dict):
             if args_dict['task_type'] == 'classification':
                 logits = (torch.sigmoid(logits_atom) +
                           torch.sigmoid(logits_motif))/2
-                logits = logits * masks
             else:
                 logits = (logits_atom + logits_motif) / 2
             traPredictAll += logits.detach().cpu().numpy().tolist()
@@ -334,7 +331,7 @@ if __name__ == '__main__':
                    help='num of threads for the handle of the dataset')
     p.add_argument('--prompt', type=bool, default=True,
                    help='Add prompt or not')
-    p.add_argument('--cluster', type=bool,
-                   default=True, help='cluster or not')
+    p.add_argument('--cluster', type=bool, default=True, 
+                   help='cluster or not')
     args = p.parse_args()
     main(args)
