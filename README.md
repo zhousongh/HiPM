@@ -41,7 +41,7 @@ For the dataset we used,  we have uploaded them to [data](https://github.com/zho
 To train a model from scratch, run:
 
 ```
-python train_evaluate.py --dataset <datasetname> --device cuda:0 --epoch 150
+python train_evaluate.py --dataset <datasetname> --device cuda:0 --epoch 60 --mode tune
 ```
 
 ## The Prediction Results
@@ -58,5 +58,5 @@ python train_evaluate.py --dataset <datasetname> --device cuda:0 --epoch 150
 | ----- | ----------------- | --------------- |
 | HiPM  | $0.0117\pm0.0001$ | $5.238\pm0.199$ |
 
-We randomly selected three seeds for each experiment with scaffold splitting, then reported the mean and standard deviation of AUC or MAE values. For methodology, please refer to the paper for more details. 
+We randomly selected three seeds for each experiment with random scaffold splitting, then reported the mean and standard deviation of AUC or MAE values. For methodology, please refer to our paper for more details. 
 
