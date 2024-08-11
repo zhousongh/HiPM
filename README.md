@@ -2,7 +2,7 @@
 
 Official Pytorch implementation of the paper: “Adapting Differential Molecular Representation with Hierarchical Prompts for Multi-label Property Prediction”.
 
-## Overview of the Framework<img src="README.assets/model_diagram.pdf" alt="model diagram" style="zoom:12%;" />
+## Overview of the Framework<img src="README.assets/model_diagram_00.png" alt="model diagram" style="zoom:12%;" />
 
 HiPM is an innovative hierarchical prompted multi-label molecular representation learning framework designed to effectively manage the complexities of multi-label molecular property prediction. This framework comprises two main components: the Molecular Representation Encoder (MRE) and the Task-Aware Prompter (TAP). The novel use of hierarchical prompts within TAP allows our model to learn task-specific prompts while also capturing shared information across multiple tasks. By constructing a hierarchical prompt tree based on task affinity—measured through the angle of gradients—our method uncovers latent associations between molecular labels. This approach mitigates the negative transfer effects often seen in multi-label tasks and enhances model interpretability. Moreover, HiPM adapts to complex multi-label scenarios without requiring extensive task-specific tuning.
 
