@@ -30,7 +30,7 @@ pip install optuna
 
 For the dataset we used,  we have uploaded them to [data](https://github.com/zhousongh/HiPM/tree/main/data/datasets).
 
-## QuickStart
+## Quick Start
 
 To train a model from scratch, run:
 
