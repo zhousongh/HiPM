@@ -1,0 +1,4 @@
+**/results/
+**/cache/
+*.json
+**/__pycache__/
