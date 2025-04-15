@@ -30,29 +30,29 @@ pip install optuna
 
 For the dataset we used,  we have uploaded them to [data](https://github.com/zhousongh/HiPM/tree/main/data/datasets).
 
-## Training and Evaluation
+## QuickStart
 
 To train a model from scratch, run:
 
 ```
-python main.py --dataset <datasetname> --device cuda:0 --epoch 60 --mode tune --n_trials 20
+python main.py --dataset <datasetname> --device cuda:0 --epoch 200 --mode tune --n_trials 20
 ```
 
-## The Prediction Results
+## Prediction Results
 
-### The classification datasets.
+### Classification
 
 | Model | Clintox         | SIDER           | Tox21           | ToxCast         |
 | ----- | --------------- | --------------- | --------------- | --------------- |
 | HiPM  | $0.928\pm0.014$ | $0.672\pm0.010$ | $0.843\pm0.007$ | $0.786\pm0.004$ |
 
-### The regression datasets
+### Regression
 
 | Model | QM8               | QM9             |
 | ----- | ----------------- | --------------- |
 | HiPM  | $0.0117\pm0.0001$ | $5.238\pm0.199$ |
 
-We randomly selected three seeds for each experiment with random scaffold splitting, then reported the mean and standard deviation of AUC or MAE values. For methodology, please refer to our paper for more details. 
+We randomly selected three seeds for each experiment with random scaffold splitting, then reported the mean and standard deviation of AUC or MAE values.
 
 ## Citation
 If you find this work useful, please kindly consider citing our paper. 
