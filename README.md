@@ -57,22 +57,23 @@ We randomly selected three seeds for each experiment with random scaffold splitt
 ## Citation
 If you find this work useful, please kindly consider citing our paper. 
 ```
-@article{bib_bbae438,
-   author = {Kang, Linjia and Zhou, Songhua and Fang, Shuyan and Liu, Shichao},
-   doi = {10.1093/bib/bbae438},
-   journal = {Briefings in Bioinformatics},
-   note = {https://doi.org/10.1093/bib/bbae438},
-   number = {5},
-   pages = {bbae438},
-   title = {Adapting differential molecular representation with hierarchical prompts for multi-label property prediction},
-   url = {https://app.dimensions.ai/details/publication/pub.1175547520},
-   volume = {25},
-   year = {2024}
+@article{kang2024hipm,
+    author = {Kang, Linjia and Zhou, Songhua and Fang, Shuyan and Liu, Shichao},
+    title = {Adapting differential molecular representation with hierarchical prompts for multi-label property prediction},
+    journal = {Briefings in Bioinformatics},
+    volume = {25},
+    number = {5},
+    pages = {bbae438},
+    year = {2024},
+    month = {09},
+    issn = {1477-4054},
+    doi = {10.1093/bib/bbae438},
+    url = {https://doi.org/10.1093/bib/bbae438},
 }
 ```
 This work leverages most modules of HimGNN (https://github.com/UnHans/HimGNN) to learn effective molecular representations with motif information. We gratefully acknowledge the authors of HimGNN for their excellent open-source contribution.
 ```
-@article{bib_bbad305,
+@article{han2023himgnn,
     author = {Han, Shen and Fu, Haitao and Wu, Yuyang and Zhao, Ganglan and Song, Zhenyu and Huang, Feng and Zhang, Zhongfei and Liu, Shichao and Zhang, Wen},
     title = {HimGNN: a novel hierarchical molecular graph representation learning framework for property prediction},
     journal = {Briefings in Bioinformatics},
