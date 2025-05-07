@@ -70,7 +70,7 @@ If you find this work useful, please kindly consider citing our paper.
    year = {2024}
 }
 ```
-This work builds upon HimGNN (https://github.com/UnHans/HimGNN), leveraging most of its modules to learn effective molecular representations. We gratefully acknowledge the authors of HimGNN for their excellent open-source contribution.
+This work leverages most modules of HimGNN (https://github.com/UnHans/HimGNN) to learn effective molecular representations with motif information. We gratefully acknowledge the authors of HimGNN for their excellent open-source contribution.
 ```
 @article{bib_bbad305,
     author = {Han, Shen and Fu, Haitao and Wu, Yuyang and Zhao, Ganglan and Song, Zhenyu and Huang, Feng and Zhang, Zhongfei and Liu, Shichao and Zhang, Wen},
